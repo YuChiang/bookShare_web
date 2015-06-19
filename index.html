@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <title>BookShare</title>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggla navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="login.html">BookShare</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="朋友/收藏/分類">
+            </div>
+            <button type="submit" class="btn btn-default">尋找</button>
+          </form>
+          
+          <ul class="nav navbar-nav navbar-right navbar-form">
+            <li><!-- Button trigger modal -->
+              <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal">新增書目</button>
+            </li>
+            <!-- <li class="page-scroll"><a href="#">Link</a></li> -->
+          </ul>
+        </div>
+      </div>  
+    </nav> <!-- navbar -->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">新增書目</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="add" class="sr-only">ISBN</label>
+              <input type="text" class="form-control" name="login" id="add_value"placeholder="ISBN" tabindex="1" value="" />
+            </div>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+            <button type="button" class="btn btn-primary">增加</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+  <div class="page-header col-md-offset-1">
+    <h2>瀏覽</h2>
+  </div>
+  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <a href="http://www.oneday.com.tw" class="thumbnail">
+          <h4>小日子生活誌</h4>
+          <p>shared by SKG</p>
+          <img src="img/1.jpg" alt="Moustiers Sainte Marie">
+          <h6>Nov. 2012</h6>
+
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="http://www.books.com.tw/activity/2015/05/camp/" class="thumbnail">
+          <h4>女孩的露營派對</h4>
+          <p>shared by SKG</p>
+          <img src="img/2.jpg" alt="Moustiers Sainte Marie">
+          <h6>作者：蘑菇女孩</h6>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="http://www.books.com.tw/products/0010547374" class="thumbnail">
+          <h4>精實創業</h4>
+          <p>shared by SKG</p>
+          <img src="img/3.jpg" alt="Moustiers Sainte Marie">
+          <h6>作者： 艾瑞克．萊斯</h6>         
+          <h6>原文作者：Eric Ries</h6>         
+
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
